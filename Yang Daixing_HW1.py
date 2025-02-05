@@ -21,7 +21,6 @@ def admin_id_check(user_id):
     else:
         fail_login_count += 1
         print('Invalid Admin ID')
-    #
     return is_correct
 
 def product_feedback():
@@ -42,7 +41,6 @@ def add_item(item_name):
 first_id = int(input("Please press 1 for Admin and 2 for customer: "))
 
 if first_id == 1:
-     # screen 2
      user_id = (input("Please enter your Admin ID: "))
 
      is_correct = admin_id_check(user_id=user_id)
@@ -56,8 +54,6 @@ if first_id == 1:
                product_feedback()
 
 elif first_id == 2:
-     # screen 4
-     #print('screend 4')
      print('Please choose your items from the following list, then provide feedback: ')
      for key in products_dict.keys():
           print(key)
